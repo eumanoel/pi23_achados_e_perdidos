@@ -21,7 +21,7 @@
                     <input type="password" name="senha" placeholder="Senha">
 
                     <div class="botoes">
-                        <button class="botao">Entrar</button>
+                        <button class="botao"><a href="cadastro.php">Entrar</a></button>
                     </div>
                 </form>
                 
