@@ -15,7 +15,7 @@
                 <div>
                     <img src="../pi23_achados_e_perdidos/imagens/coapac.png" alt="login" >
                 </div>
-                <form method="post" action="index.php">
+                <form method="post" action="php/cadastro_bd.php">
                     <input type="text" name="nome" placeholder="Nome de usuário" autofocus>
                     <input type="text" name="usuario" placeholder="Usuário">
                     <input type="password" name="senha" placeholder="Senha">
