@@ -8,19 +8,13 @@
 </head>
 <body>
 <header>
-            <div class="content">
-                <nav>
-                   <ul>
-                       <button> <a href="login.php">Login</a> </button>
-                   </ul>
-                </nav>
-                <div class="header-block">
+                    <?php include 'bases/menu.php'; ?>
                     <div class="text">
                         <h2>ACHADOS E PERDIDOS</h2>
                         <p>Esse site tem a finalidade de organizar para os servidores da coapac os itens do achados e perdidos.</p>
                         
                     </div>
-                    <img src="../pi23_achados_e_perdidos/imagens/coapac.png" alt="car">
+                    <img src="../pi23_achados_e_perdidos/imagens/coapac.png" alt="coapac">
                 </div>
             </div>
         </header>
@@ -37,12 +31,7 @@
         <br>
         <br>
 
-<div>
-        <footer>
-        <div class="last">
-            Manoel Edjalma - Lucas Andrade - Marcos Vinicius - Info 4v - Projeto Final pi23
-        </div>
-    </footer> 
-    </div>   
+
+        <?php include 'bases/rodape.php'; ?> 
 </body>
 </html>
