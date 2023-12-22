@@ -17,11 +17,11 @@
                 </div>
 
                 <form method="post" action="">
-                    <input type="number" name="nome" placeholder="Matricula" autofocus>
+                    <input type="text" name="nome" placeholder="Matricula" autofocus>
                     <input type="password" name="senha" placeholder="Senha">
 
                     <div class="botoes">
-                        <button class="botao"><a href="cadastro.php">Entrar</a></button>
+                    <input type="submit" value="Login">
                     </div>
                 </form>
                 

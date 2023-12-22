@@ -15,13 +15,13 @@
                 <div>
                     <img src="../pi23_achados_e_perdidos/imagens/coapac.png" alt="login" >
                 </div>
-                <form method="post" action="lcs.html">
+                <form method="post" action="index.php">
                     <input type="text" name="nome" placeholder="Nome de usuário" autofocus>
-                    <input type="email" name="usuario" placeholder="Usuário">
+                    <input type="text" name="usuario" placeholder="Usuário">
                     <input type="password" name="senha" placeholder="Senha">
 
                     <div class="botoes">
-                    <button class="botao">Cadastrar-se</button>
+                    <input type="submit" value="Cadastrar">
                     </div>
                 </form>
             </div>
