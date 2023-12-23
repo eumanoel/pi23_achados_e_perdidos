@@ -90,9 +90,20 @@ a{
   margin-left: 10px;
 }
 
-.botao {
-  width: 35%;
-  height: 120%;
+
+.botoes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  border-radius: 100px;
+  color:var(--gray);
+  text-align: center;
+  
+}
+.botoes input{
+  width: 38%;
+  height: 110%;
   display: block;
   background-color:var(--gray);
   font-size: 20px;
@@ -100,17 +111,7 @@ a{
   font-weight: bold;
   cursor: pointer;
   margin-top: 2rem;
-  margin-left: 32%;
   font-size: x-small;
-  border-radius: 20px;
-  text-align: center;
-}
-
-.botoes {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-bottom: 1.5rem;
-  border-radius: 10px;
-  color:var(--gray);
+  border-radius: 15px;
+  margin-left: 100px;
 }
