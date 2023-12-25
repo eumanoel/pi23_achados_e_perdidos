@@ -5,10 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/login.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="../pi23_achados_e_perdidos/css/menu_2.css">
+    <link rel="stylesheet" href="../pi23_achados_e_perdidos/css/rodape_2.css">
+    <title>Pagina de Cadastro</title>
 </head>
 <body>
-
+<?php include 'bases/menu_2.php'; ?>
 
         <section class="area-login">
             <div class="login">
@@ -26,6 +28,8 @@
                 </form>
             </div>
         </section>
-
+        <br>
+        <br>
+        <?php include 'bases/rodape_2.php'; ?>
 </body>
 </html>
