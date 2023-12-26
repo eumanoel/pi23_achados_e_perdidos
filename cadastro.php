@@ -10,7 +10,7 @@
     <title>Pagina de Cadastro</title>
 </head>
 <body>
-<?php include 'bases/menu_2.php'; ?>
+                <?php include 'bases/menu_2.php'; ?>
 
         <section class="area-login">
             <div class="login">
@@ -23,13 +23,12 @@
                     <input type="password" name="senha" placeholder="Senha">
 
                     <div class="botoes">
-                    <input type="submit" value="Cadastrar">
+                    <input type="submit" value="Cadastrar-se">
                     </div>
                 </form>
             </div>
         </section>
-        <br>
-        <br>
-        <?php include 'bases/rodape_2.php'; ?>
+        <br>  
+                    <?php include 'bases/rodape_2.php'; ?>
 </body>
-</html>
+</html
