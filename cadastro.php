@@ -18,9 +18,9 @@
                     <img src="../pi23_achados_e_perdidos/imagens/coapac.png" alt="login" >
                 </div>
                 <form method="post" action="php/cadastro_bd.php">
-                    <input type="text" name="nome" placeholder="Nome de usuário" autofocus>
-                    <input type="text" name="usuario" placeholder="Usuário">
-                    <input type="password" name="senha" placeholder="Senha">
+                    <input type="text" name="nome" id="nome" placeholder="Nome de usuário" autofocus>
+                    <input type="text" name="usuario" id="usuario" placeholder="Usuário">
+                    <input type="password" name="senha" id="senha" placeholder="Senha">
 
                     <div class="botoes">
                     <input type="submit" value="Cadastrar-se">

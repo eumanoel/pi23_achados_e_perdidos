@@ -1,6 +1,6 @@
 <header><nav>
                    <ul>
-                      <img src="../pi23_achados_e_perdidos/imagens/IFRN.png" alt="">
+                      <img src="../pi23_achados_e_perdidos/imagens/IFRN.png" alt="" width="60px";>
                    </ul>
                    <ul>
                        <button> <a href="login.php">Login</a> </button>

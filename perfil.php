@@ -1,3 +1,4 @@
+<?php include 'sessao/verificar_autenticado.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,6 +7,6 @@
     <title>Pagina de Perfil</title>
 </head>
 <body>
-    
+    oii
 </body>
 </html>

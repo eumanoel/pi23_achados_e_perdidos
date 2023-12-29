@@ -24,8 +24,15 @@
                 </div>
 
                 <form method="post" action="">
-                    <input type="text" name="nome" placeholder="Matricula" autofocus>
-                    <input type="password" name="senha" placeholder="Senha">
+                    <input type="text" name="usuario" id="usuario "placeholder="Matricula" autofocus>
+                    <input type="password" name="senha" id="senha" placeholder="Senha">
+
+
+                    <?php
+if (isset($_GET['erro'])) {
+    echo "<p class='text-danger'>".$_GET['erro']."</p>";
+}
+?>
 
                     <div class="botoes">
                     <input type="submit" value="Login">
