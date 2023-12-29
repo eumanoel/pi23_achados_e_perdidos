@@ -23,16 +23,9 @@
                    <img src="../pi23_achados_e_perdidos/imagens/coapac.png" alt="coapac">
                 </div>
 
-                <form method="post" action="">
-                    <input type="text" name="usuario" id="usuario "placeholder="Matricula" autofocus>
+                <form method="post" action="php/autenticacao.php">
+                    <input type="text" name="usuario" id="usuario "placeholder="Usuario" autofocus>
                     <input type="password" name="senha" id="senha" placeholder="Senha">
-
-
-                    <?php
-if (isset($_GET['erro'])) {
-    echo "<p class='text-danger'>".$_GET['erro']."</p>";
-}
-?>
 
                     <div class="botoes">
                     <input type="submit" value="Login">

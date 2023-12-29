@@ -7,6 +7,11 @@
     <title>Pagina de Perfil</title>
 </head>
 <body>
-    oii
+<?php include 'bases/menu_2.php'; ?>   
+
+oii
+
+
+<?php include 'bases/rodape_2.php'; ?>
 </body>
 </html>
