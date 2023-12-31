@@ -4,7 +4,7 @@ function conectar()
 {
     $servidor = "localhost";
     $usuario = "root";
-    $senha ="123";
+    $senha ="";
     $banco = "cadastro_achados_perdidos";
 
     $conn = new mysqli($servidor, $usuario, $senha, $banco);
