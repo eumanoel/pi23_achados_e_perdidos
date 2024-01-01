@@ -11,5 +11,7 @@
                    <ul>
                        <button> <a href="index.php">Home</a> </button>
                    </ul>
-
+                   <ul>
+                       <button> <a href="perfil.php">Perfil</a> </button>
+                   </ul>
                 </nav></header>

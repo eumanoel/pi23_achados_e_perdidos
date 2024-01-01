@@ -26,15 +26,15 @@
                     </div>
                     <div class="card-item">
                         <div class="car-content">
-                            <h3>ADICIONAR OBJETOS</h3>
-                            <a href="pagcompra2.html">
+                            <h3> TIPO DE OBJETOS</h3>
+                            <a href="p_tipo_objeto.php">
                             <button type="button">ENTRAR</button>
                         </a>
                         </div>
                     </div>
                     <div class="card-item">
                         <div class="car-content">
-                            <h3>OBJETOS ADICIONADOS</h3>
+                            <h3>DESCREVER OBJETOS</h3>
                             <a href="pagcompra2.html">
                             <button type="button">ENTRAR</button>
                         </a>
