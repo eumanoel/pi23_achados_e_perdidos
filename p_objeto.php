@@ -46,7 +46,7 @@ while($row = $result->fetch_assoc()) {
   echo "<tr>";
   echo "<td><img class='img-fluid rounded' src='src/media/".$row["imagem"]."' width='50px' alt=''></td>";  
 
-  echo "<td scope='row'>".$row["nome"]."</td>";
+  echo "<td scope='row'>".$row["titulo"]."</td>";
   echo "<td><a href='p_objeto_editar.php?codigo=".$row["codigo"]."'>EDITAR</td>";
   echo "<td><a href='php/p_objeto_remover_bd.php?codigo=".$row["codigo"]."'>REMOVER</td>";
   echo "</tr>";

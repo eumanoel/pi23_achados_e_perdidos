@@ -12,7 +12,8 @@ da tabela nucleo_publico, já que lá tem as referências de quais
 públicos ela se relaciona (dependência).
 */
 
-
+$sql = "DELETE FROM tipo_objeto WHERE nucleo_codigo=$codigo;";
+$result = $conn->query($sql);
 
 if($result){
     // Agora remover o bucleo, pois não tem mais dependência no banco
