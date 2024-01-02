@@ -35,7 +35,7 @@
                     <div class="card-item">
                         <div class="car-content">
                             <h3>DESCREVER OBJETOS</h3>
-                            <a href="pagcompra2.html">
+                            <a href="p_objeto.php">
                             <button type="button">ENTRAR</button>
                         </a>
                         </div>

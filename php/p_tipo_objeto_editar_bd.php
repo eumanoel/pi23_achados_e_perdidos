@@ -12,7 +12,7 @@ $sql = "UPDATE tipo_objeto SET nome='$nome' WHERE id=$id;";
 $result = $conn->query($sql);
 if($result){
     desconectar($conn);
-    header("Location: ../p__tipo_objeto.php");
+    header("Location: ../p_tipo_objeto.php");
     die();
 }else{
     desconectar($conn);

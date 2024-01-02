@@ -14,4 +14,7 @@
                    <ul>
                        <button> <a href="perfil.php">Perfil</a> </button>
                    </ul>
+                   <ul>
+                       <button> <a href="sessao/remover_sessao.php"> Logout</a> </button>
+                   </ul>
                 </nav></header>
