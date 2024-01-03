@@ -20,7 +20,7 @@
          
     <div class="login">
                 <div>
-                   <img src="../pi23_achados_e_perdidos/imagens/coapac.png" alt="coapac">
+                   <img src="imagens/coapac.png" alt="coapac">
                 </div>
 
                 <form method="post" action="php/autenticacao.php">

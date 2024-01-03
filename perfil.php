@@ -16,15 +16,6 @@
             
                 <div class="card-wrapper">
                     <div class="card-item">
-
-                        <div class="car-content">
-                            <h3>MEUS DADOS</h3>
-                            <a href="pagcompra.html">
-                            <button type="button">ENTRAR</button>
-                        </a>
-                        </div>
-                    </div>
-                    <div class="card-item">
                         <div class="car-content">
                             <h3> TIPO DE OBJETOS</h3>
                             <a href="p_tipo_objeto.php">
