@@ -53,25 +53,25 @@ desconectar($conn);
 <tr>
 <p>
    <td><label for="nome">Titulo:</label></td>
-   <td><input type="text" name="titulo" id="titulo" <?php echo $titulo; ?>></td>
+   <td><input type="text" name="titulo" id="titulo" ></td>
 </p>
 </tr>
 <tr>
 <p>
 <td><label for="sigla">Descrição:</label></td>
-<td><input type="text" name="descricao" id="descricao" <?php echo $descricao; ?>></td>
+<td><input type="text" name="descricao" id="descricao" ></td>
 </p>
 </tr>
 <tr>
 <p>
 <td><label for="data_criacao">Data encontrado:</label></td>
-<td><input type="date" name="data_encontrado" id="data_encontrado" <?php echo $data_encontrado; ?>></td>
+<td><input type="date" name="data_encontrado" id="data_encontrado" ></td>
 </p>
 </tr>
 <tr>
 <p>
 <td><label for="data_criacao">Data devolvido:</label></td>
-<td><input type="date" name="data_devolvido" id="data_devolvido" <?php echo $data_devolvido; ?>></td>
+<td><input type="date" name="data_devolvido" id="data_devolvido" ></td>
 </p>
 </tr>
 <tr>
@@ -90,7 +90,7 @@ desconectar($conn);
           echo "<input type='radio' name='tipo_objeto' value='".$row["id"]."' /> ".$row["nome"]."<br />";
       }
       } else {
-      echo "Nenhum objeto cadastrada";
+      echo "Nenhum objeto cadastrado";
       }
   ?>
   </td>

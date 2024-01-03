@@ -63,7 +63,7 @@
           echo "<input type='radio' name='tipo_objeto' value='".$row["id"]."' /> ".$row["nome"]."<br />";
       }
       } else {
-      echo "Nenhuma área cadastrada";
+      echo "Nenhum objeto cadastrado";
       }
   ?>
   </td>
