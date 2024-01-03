@@ -14,7 +14,7 @@
                         <p>Esse site tem a finalidade de organizar para os servidores da coapac os itens do achados e perdidos.</p>
                         
                     </div>
-                    <img src="../pi23_achados_e_perdidos/imagens/coapac.png" alt="coapac">
+                    <img src="imagens/coapac.png" alt="coapac">
                 </div>
             </div>
         </header>
