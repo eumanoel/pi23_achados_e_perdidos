@@ -53,32 +53,29 @@ desconectar($conn);
 <tr>
 <p>
    <td><label for="nome">Titulo:</label></td>
-   <td><input type="text" name="titulo" id="titulo"></td>
+   <td><input type="text" name="titulo" id="titulo" <?php echo $titulo; ?>></td>
 </p>
 </tr>
 <tr>
 <p>
 <td><label for="sigla">Descrição:</label></td>
-<td><input type="text" name="descricao" id="descricao"></td>
+<td><input type="text" name="descricao" id="descricao" <?php echo $descricao; ?>></td>
 </p>
 </tr>
 <tr>
 <p>
 <td><label for="data_criacao">Data encontrado:</label></td>
-<td><input type="date" name="data_encontrado" id="data_encontrado"></td>
+<td><input type="date" name="data_encontrado" id="data_encontrado" <?php echo $data_encontrado; ?>></td>
 </p>
 </tr>
 <tr>
 <p>
 <td><label for="data_criacao">Data devolvido:</label></td>
-<td><input type="date" name="data_devolvido" id="data_devolvido"></td>
+<td><input type="date" name="data_devolvido" id="data_devolvido" <?php echo $data_devolvido; ?>></td>
 </p>
 </tr>
 <tr>
-<p>
-<td><label for="imagem">Imagem:</label></td>
-<td><input type="file" name="imagem" id="imagem"></td>
-</p>
+
 </tr>
 <tr>
 <p>
@@ -93,13 +90,13 @@ desconectar($conn);
           echo "<input type='radio' name='tipo_objeto' value='".$row["id"]."' /> ".$row["nome"]."<br />";
       }
       } else {
-      echo "Nenhuma área cadastrada";
+      echo "Nenhum objeto cadastrada";
       }
   ?>
   </td>
 </p>
 
-
+<input type="text">
 
 
 <tr>
