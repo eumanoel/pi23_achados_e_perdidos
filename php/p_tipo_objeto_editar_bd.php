@@ -1,4 +1,4 @@
-<?php
+ <?php
 
 $id = $_POST["id"];
 $nome = $_POST["nome"];
@@ -19,4 +19,4 @@ if($result){
     echo "<p>Problema</p>";
 }
 
-?>
+?> 
