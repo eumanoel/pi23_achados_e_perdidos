@@ -50,7 +50,7 @@
     
       }
     } else {
-      echo "<td>Nenhum núcleo cadastrado</td><td></td><td></td>";
+      echo "<td>Nenhum objeto cadastrado</td><td></td><td></td>";
     }
 
     desconectar($conn);
