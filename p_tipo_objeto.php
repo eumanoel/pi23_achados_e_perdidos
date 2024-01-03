@@ -16,12 +16,12 @@
 
 <div class="container">
 
-<div class="row mt-5 mb-5">
-<div class="col-lg-6">
- <h2>Áreas</h2>
+<div class="">
+<div class="">
+ <h2>Tipos de objetos</h2>
 <p><a href="p_tipo_objeto_adicionar.php">Adicionar</a></p>
 
- <table class="table table-striped">
+ <table class="">
  <thead>
   <tr>
     <th scope="col">Nome</th>
@@ -63,8 +63,6 @@ desconectar($conn);
 
 
 </div>
-<div class="col-lg-6">
- <img class="img-fluid rounded" src="src/img/campus.jpg" alt="">
 </div>
 </div>
 </div>

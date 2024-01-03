@@ -47,7 +47,7 @@
 </p>
 
 <p>
-  Selecione uma área:<br />
+  Selecione um objeto:<br />
   <?php
       include "conexao/conexao.php";
       $conn = conectar();

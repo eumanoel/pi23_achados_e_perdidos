@@ -6,11 +6,7 @@ include "../conexao/conexao.php";
 
 $conn = conectar();
 
-/* 
-Antes de remover o núcleo, é preciso remover todas as instâncias
-da tabela nucleo_publico, já que lá tem as referências de quais 
-públicos ela se relaciona (dependência).
-*/
+
 
 
 if($result){
