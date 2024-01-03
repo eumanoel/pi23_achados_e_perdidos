@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../pi23_achados_e_perdidos/src/css/perfil.css">
-    <link rel="stylesheet" href="../pi23_achados_e_perdidos/src/css/menu_2.css">
-    <link rel="stylesheet" href="../pi23_achados_e_perdidos/src/css/rodape_2.css">
+    <link rel="stylesheet" href="src/css/perfil.css">
+    <link rel="stylesheet" href="src/css/menu_2.css">
+    <link rel="stylesheet" href="src/css/rodape_2.css">
     <title>Pagina de Perfil</title>
 </head>
 <body>
