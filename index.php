@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../pi23_achados_e_perdidos/css/index.css">
+    <link rel="stylesheet" href="../pi23_achados_e_perdidos/src/css/index.css">
     <title>Pagina Principal</title>
 </head>
 <body>

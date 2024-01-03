@@ -6,6 +6,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../pi23_achados_e_perdidos/src/css/perfil.css">
+    <link rel="stylesheet" href="../pi23_achados_e_perdidos/src/css/menu_2.css">
+    <link rel="stylesheet" href="../pi23_achados_e_perdidos/src/css/rodape_2.css">
     <title>Document</title>
 </head>
 <body>
@@ -15,26 +18,26 @@
 
 <div class="row mt-5 mb-5">
 <div class="col-lg-6">
- <h2>Cadastro de Núcleo</h2>
+ <h2>Cadastro de Objetos</h2>
  <form action="php/p_objeto_adicionar_bd.php" method="post" enctype="multipart/form-data">
 
 <p>
-   <label for="nome">Nome:</label>
+   <label for="nome">Titulo:</label>
    <input type="text" name="titulo" id="titulo">
 </p>
 
 <p>
-   <label for="sigla">Sigla:</label>
+   <label for="sigla">Descrição:</label>
    <input type="text" name="descricao" id="descricao">
 </p>
 
 <p>
-   <label for="data_criacao">Data de Criação:</label>
+   <label for="data_criacao">Data encontrado:</label>
    <input type="date" name="data_encontrado" id="data_encontrado">
 </p>
 
 <p>
-   <label for="data_criacao">Data de Criação:</label>
+   <label for="data_criacao">Data devolvido:</label>
    <input type="date" name="data_devolvido" id="data_devolvido">
 </p>
 
@@ -62,21 +65,12 @@
 
 
 
-<!--codigo int not null auto_increment primary key,
-  nome VARCHAR(500) not null,
-  sigla VARCHAR(50) not null,
-  imagem VARCHAR(500) not null,
-  data_criacao DATE not null,
-  coordenador VARCHAR(500) not null,
-  area_id int,-->
 
 
 <p><input type="submit" value="Cadastrar"></p>
 </form>
 </div>
-<div class="col-lg-6">
- <img class="img-fluid rounded" src="src/img/campus.jpg" alt="">
-</div>
+
 </div>
 </div>
 

@@ -6,6 +6,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../pi23_achados_e_perdidos/src/css/perfil.css">
+    <link rel="stylesheet" href="../pi23_achados_e_perdidos/src/css/menu_2.css">
+    <link rel="stylesheet" href="../pi23_achados_e_perdidos/src/css/rodape_2.css">
     <title>Document</title>
 </head>
 <body>
@@ -13,11 +16,11 @@
   <?php include 'bases/menu_2.php'; ?>
 
 
-<div class="container">
+<div class="r">
 
-<div class="row mt-5 mb-5">
-<div class="col-lg-6">
- <h2>Núcleos</h2>
+<div class="">
+<div class="">
+ <h2>Objetos</h2>
 <p><a href="p_objeto_adicionar.php">Adicionar</a></p>
 
  <table class="table table-striped">
@@ -47,8 +50,8 @@ while($row = $result->fetch_assoc()) {
   echo "<td><img class='img-fluid rounded' src='src/media/".$row["imagem"]."' width='50px' alt=''></td>";  
 
   echo "<td scope='row'>".$row["titulo"]."</td>";
-  echo "<td><a href='p_objeto_editar.php?codigo=".$row["codigo"]."'>EDITAR</td>";
-  echo "<td><a href='php/p_objeto_remover_bd.php?codigo=".$row["codigo"]."'>REMOVER</td>";
+  echo "<td><a href='p_objeto_editar.php?codigo=".$row["id"]."'>EDITAR</td>";
+  echo "<td><a href='php/p_objeto_remover_bd.php?codigo=".$row["id"]."'>REMOVER</td>";
   echo "</tr>";
 }
 } else {
@@ -65,9 +68,7 @@ desconectar($conn);
 
 
 </div>
-<div class="col-lg-6">
- <img class="img-fluid rounded" src="src/img/campus.jpg" alt="">
-</div>
+
 </div>
 </div>
 
