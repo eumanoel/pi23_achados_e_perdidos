@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../pi23_achados_e_perdidos/src/css/perfil.css">
     <link rel="stylesheet" href="../pi23_achados_e_perdidos/src/css/menu_2.css">
     <link rel="stylesheet" href="../pi23_achados_e_perdidos/src/css/rodape_2.css">
+    <link rel="stylesheet" href="../pi23_achados_e_perdidos/src/css/objetos.css">
     <title>Document</title>
 </head>
 <body>
@@ -16,14 +17,12 @@
   <?php include 'bases/menu_2.php'; ?>
 
 
-<div class="r">
+<div class="tabela">
 
-<div class="">
-<div class="">
  <h2>Objetos</h2>
 <p><a href="p_objeto_adicionar.php">Adicionar</a></p>
 
- <table class="table table-striped">
+ <table>
  <thead>
   <tr>
     <th scope="col">Logo</th>
@@ -50,8 +49,8 @@ while($row = $result->fetch_assoc()) {
   echo "<td><img class='img-fluid rounded' src='src/media/".$row["imagem"]."' width='50px' alt=''></td>";  
 
   echo "<td scope='row'>".$row["titulo"]."</td>";
-  echo "<td><a href='p_objeto_editar.php?codigo=".$row["id"]."'>EDITAR</td>";
-  echo "<td><a href='php/p_objeto_remover_bd.php?codigo=".$row["id"]."'>REMOVER</td>";
+  echo "<td><a href='p_objeto_editar.php?id=".$row["id"]."'>EDITAR</td>";
+  echo "<td><a href='php/p_objeto_remover_bd.php?id=".$row["id"]."'>REMOVER</td>";
   echo "</tr>";
 }
 } else {
@@ -69,10 +68,6 @@ desconectar($conn);
 
 </div>
 
-</div>
-</div>
-
-</div>
 
 
  <!-- INCLUINDO CÓDIGO DE RODAPÉ COMUM A TODAS AS PÁGINAS -->

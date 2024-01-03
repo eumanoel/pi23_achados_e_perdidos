@@ -9,45 +9,50 @@
     <link rel="stylesheet" href="../pi23_achados_e_perdidos/src/css/perfil.css">
     <link rel="stylesheet" href="../pi23_achados_e_perdidos/src/css/menu_2.css">
     <link rel="stylesheet" href="../pi23_achados_e_perdidos/src/css/rodape_2.css">
+    <link rel="stylesheet" href="../pi23_achados_e_perdidos/src/css/objetos.css">
     <title>Document</title>
 </head>
 <body>
 <?php include 'bases/menu_2.php'; ?>
 
-<div class="container">
-
-<div class="row mt-5 mb-5">
-<div class="col-lg-6">
- <h2>Cadastro de Objetos</h2>
+<div>
+   <table class="objetos" >
+      <tr>
+   <td colspan="2"><h2>Cadastro de Objetos</h2></td>
  <form action="php/p_objeto_adicionar_bd.php" method="post" enctype="multipart/form-data">
-
+      </tr>
+      <tr>
 <p>
-   <label for="nome">Titulo:</label>
-   <input type="text" name="titulo" id="titulo">
+   <td><label for="nome">Titulo:</label></td>
+   <td><input type="text" name="titulo" id="titulo"></td>
 </p>
-
+      </tr>
+      <tr>
 <p>
-   <label for="sigla">Descrição:</label>
-   <input type="text" name="descricao" id="descricao">
+   <td><label for="sigla">Descrição:</label></td>
+   <td><input type="text" name="descricao" id="descricao"></td>
 </p>
-
+      </tr>
+      <tr>
 <p>
-   <label for="data_criacao">Data encontrado:</label>
-   <input type="date" name="data_encontrado" id="data_encontrado">
+<td><label for="data_criacao">Data encontrado:</label></td>
+<td><input type="date" name="data_encontrado" id="data_encontrado"></td>
 </p>
-
+      </tr>
+      <tr>
 <p>
-   <label for="data_criacao">Data devolvido:</label>
-   <input type="date" name="data_devolvido" id="data_devolvido">
+<td><label for="data_criacao">Data devolvido:</label></td>
+<td><input type="date" name="data_devolvido" id="data_devolvido"></td>
 </p>
-
+      </tr>
+      <tr>
 <p>
-   <label for="imagem">Imagem:</label>
-   <input type="file" name="imagem" id="imagem">
+<td><label for="imagem">Imagem:</label></td>
+<td><input type="file" name="imagem" id="imagem"></td>
 </p>
-
+      <tr>
 <p>
-  Selecione um objeto:<br />
+<td colspan="2">Selecione um objeto:<br />
   <?php
       include "conexao/conexao.php";
       $conn = conectar();
@@ -61,18 +66,18 @@
       echo "Nenhuma área cadastrada";
       }
   ?>
+  </td>
 </p>
+      </tr>
 
 
 
 
-
-<p><input type="submit" value="Cadastrar"></p>
+<p><td colspan="2"><input type="submit" value="Cadastrar"></td></p>
 </form>
+   </table>
 </div>
 
-</div>
-</div>
 
  <?php include 'bases/rodape_2.php'; ?>
 </body>

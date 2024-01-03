@@ -8,20 +8,18 @@
     <link rel="stylesheet" href="../pi23_achados_e_perdidos/src/css/perfil.css">
     <link rel="stylesheet" href="../pi23_achados_e_perdidos/src/css/menu_2.css">
     <link rel="stylesheet" href="../pi23_achados_e_perdidos/src/css/rodape_2.css">
+    <link rel="stylesheet" href="../pi23_achados_e_perdidos/src/css/objetos.css">
     <title>Document</title>
 </head>
 <body>
 <?php include 'bases/menu_2.php'; ?>
+<table>
 
-
-<div class="container">
-
-<div class="">
-<div class="">
+<div class="tabela">
  <h2>Tipos de objetos</h2>
 <p><a href="p_tipo_objeto_adicionar.php">Adicionar</a></p>
 
- <table class="">
+ <table class="the">
  <thead>
   <tr>
     <th scope="col">Nome</th>
@@ -29,6 +27,7 @@
     <th scope="col">Remover</th>
   </tr>
 </thead>
+
 <tbody>
 
 <?php
@@ -60,14 +59,10 @@ desconectar($conn);
 </tbody>
 
 </table>
-
-
-</div>
-</div>
-</div>
+</table>
 </div>
 
-</div>
+
 
 
  <?php include 'bases/rodape_2.php'; ?>  

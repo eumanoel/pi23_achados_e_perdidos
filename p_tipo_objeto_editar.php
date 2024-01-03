@@ -29,31 +29,37 @@ desconectar($conn);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../pi23_achados_e_perdidos/src/css/perfil.css">
+    <link rel="stylesheet" href="../pi23_achados_e_perdidos/src/css/menu_2.css">
+    <link rel="stylesheet" href="../pi23_achados_e_perdidos/src/css/rodape_2.css">
+    <link rel="stylesheet" href="../pi23_achados_e_perdidos/src/css/objetos.css">
     <title>Document</title>
 </head>
 <body>
 <?php include 'bases/menu_2.php'; ?>
 
 <div class="container">
-
-<div class="row mt-5 mb-5">
-<div class="col-lg-6">
- <h2>Edição de Área</h2>
+<table class="objetos">
+  <tr>
+ <td colspan="2"><h2>Edição de Área</h2></td>
  <form action="php/p_tipo_objeto_editar_bd.php" method="post">
+</tr>
 <p>
-   <label for="nome">Nome:</label>
-   <input type="text" name="nome" id="nome" value="<?php echo $nome_area; ?>" />
-</p>
+  <tr>
+   <td><label for="nome">Nome:</label></td>
+   <td><input type="text" name="nome" id="nome" value="<?php echo $nome_area; ?>" /></td>
+  </tr>
+  </p>
 
 <input type="hidden" name="id" value="<?php echo $id; ?>" />
-
-<p><input type="submit" value="Cadastrar"></p>
+<tr>
+<p><td colspan="2"><input type="submit" value="Cadastrar"></td></p>
+</tr>
 </form>
+</table>
 </div>
 <div class="col-lg-6">
  <img class="img-fluid rounded" src="src/img/campus.jpg" alt="">
-</div>
-</div>
 </div>
 
  <?php include 'bases/rodape_2.php'; ?>

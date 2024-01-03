@@ -19,7 +19,7 @@ $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
   while($row = $result->fetch_assoc()) {
-    $nome_area = $row["nome"];
+    $nome_area = $row["titulo"];
   }
 } else {
   echo "<td>Nenhuma área cadastrada</td><td></td><td></td>";
@@ -34,73 +34,84 @@ desconectar($conn);
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../pi23_achados_e_perdidos/src/css/perfil.css">
+    <link rel="stylesheet" href="../pi23_achados_e_perdidos/src/css/menu_2.css">
+    <link rel="stylesheet" href="../pi23_achados_e_perdidos/src/css/rodape_2.css">
+    <link rel="stylesheet" href="../pi23_achados_e_perdidos/src/css/objetos.css">
     <title>Document</title>
 </head>
 <body>
-       <!-- INCLUINDO CÓDIGO DE MENU COMUM A TODAS AS PÁGINAS -->
-  <?php include 'bases/menu_2.php'; ?>
+
+<?php include 'bases/menu_2.php'; ?>
+<div>
+   <table class="objetos">
+
+<tr>
+ <td colspan="2"><h2>Editar Objetos</h2></td>
+ <form action="php/p_objeto_editar_bd.php" method="post" enctype="multipart/form-data">
+</tr>
+<tr>
+<p>
+   <td><label for="nome">Titulo:</label></td>
+   <td><input type="text" name="titulo" id="titulo"></td>
+</p>
+</tr>
+<tr>
+<p>
+<td><label for="sigla">Descrição:</label></td>
+<td><input type="text" name="descricao" id="descricao"></td>
+</p>
+</tr>
+<tr>
+<p>
+<td><label for="data_criacao">Data encontrado:</label></td>
+<td><input type="date" name="data_encontrado" id="data_encontrado"></td>
+</p>
+</tr>
+<tr>
+<p>
+<td><label for="data_criacao">Data devolvido:</label></td>
+<td><input type="date" name="data_devolvido" id="data_devolvido"></td>
+</p>
+</tr>
+<tr>
+<p>
+<td><label for="imagem">Imagem:</label></td>
+<td><input type="file" name="imagem" id="imagem"></td>
+</p>
+</tr>
+<tr>
+<p>
+<td colspan="2">Selecione um objeto:<br />
+  <?php
+      
+      $conn = conectar();
+      $sql = "SELECT * FROM tipo_objeto";
+      $result = $conn->query($sql);
+      if ($result->num_rows > 0) {
+      while($row = $result->fetch_assoc()) {
+          echo "<input type='radio' name='tipo_objeto' value='".$row["id"]."' /> ".$row["nome"]."<br />";
+      }
+      } else {
+      echo "Nenhuma área cadastrada";
+      }
+  ?>
+  </td>
+</p>
 
 
-<div class="r">
 
-<div class="">
-<div class="">
- <h2>Objetos</h2>
-<p><a href="p_objeto_adicionar.php">Adicionar</a></p>
 
- <table class="table table-striped">
- <thead>
-  <tr>
-    <th scope="col">Logo</th>
-    <th scope="col">Nome</th>
-    <th scope="col">Editar</th>
-    <th scope="col">Remover</th>
-  </tr>
-</thead>
-<tbody>
-
-<?php
-
-include "conexao/conexao.php";
-
-$conn = conectar();
-
-$sql = "SELECT * FROM objeto";
-
-$result = $conn->query($sql);
-
-if ($result->num_rows > 0) {
-while($row = $result->fetch_assoc()) {
-  echo "<tr>";
-  echo "<td><img class='img-fluid rounded' src='src/media/".$row["imagem"]."' width='50px' alt=''></td>";  
-
-  echo "<td scope='row'>".$row["titulo"]."</td>";
-  echo "<td><a href='p_objeto_editar.php?codigo=".$row["id"]."'>EDITAR</td>";
-  echo "<td><a href='php/p_objeto_remover_bd.php?codigo=".$row["id"]."'>REMOVER</td>";
-  echo "</tr>";
-}
-} else {
-echo "<td>Nenhum núcleo cadastrado</td><td></td><td></td>";
-}
-
-desconectar($conn);
-
-?>
-  
-</tbody>
-
-</table>
-
+<tr>
+<p><td colspan="2"><input type="submit" value="Editar"></td></p>
+   </tr>
+</form>
+   </table>
 
 </div>
 
-</div>
-</div>
-
-</div>
 
 
- <!-- INCLUINDO CÓDIGO DE RODAPÉ COMUM A TODAS AS PÁGINAS -->
  <?php include 'bases/rodape_2.php'; ?>
 </body>
 </html>

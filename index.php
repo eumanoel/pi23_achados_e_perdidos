@@ -25,12 +25,37 @@
         <br>
         <br>
         <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+        <h2>Últimos Objetos</h2>
 
+<div class="row">
+
+<?php
+    include "conexao/conexao.php";
+    $conn = conectar();
+    $sql = "SELECT * FROM objeto";
+    $result = $conn->query($sql);
+    if ($result->num_rows > 0) {
+      while($row = $result->fetch_assoc()) {
+        echo "<div class='col-lg-4 col-sm-6 portfolio-item'>";
+        echo "<div class='card h-100'>";
+        echo "<a href='p_objeto.php'".$row["id"]."'>";
+        echo "<img class='card-img-top' src='src/media/".$row["imagem"]."' alt='' style='width:10em'>";
+        echo "</a>";
+        echo "<div class='card-body'>";
+        echo "<h4 class='card-title'>";
+        echo "<a href='objeto_detalhes.php?id=".$row["id"]."'>".$row["titulo"]."</a>";
+        echo "</h4>";
+        echo "<p class='card-text text-uppercase'>".$row["descricao"]."</p>";
+        echo "</h4></div></div></div>";
+    
+      }
+    } else {
+      echo "<td>Nenhum núcleo cadastrado</td><td></td><td></td>";
+    }
+
+    desconectar($conn);
+
+?>
 
         <?php include 'bases/rodape.php'; ?> 
 </body>
