@@ -8,14 +8,15 @@
     <link rel="stylesheet" href="src/css/perfil.css">
     <link rel="stylesheet" href="src/css/menu_2.css">
     <link rel="stylesheet" href="src/css/rodape_2.css">
+    <link rel="stylesheet" href="src/css/objetos.css">
     <title>Document</title>
 </head>
 <body>
 <?php include 'bases/menu_2.php'; ?>
 
-<div class="container">
+<div class="the">
 
-<div class="row mt-5 mb-5">
+<div class="">
 <div class="col-lg-6">
  <h2>Cadastro de Objetos</h2>
  <form action="php/p_tipo_objeto_adicionar_bd.php" method="post">
