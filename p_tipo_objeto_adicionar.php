@@ -24,7 +24,7 @@
    <label for="nome">Nome:</label>
    <input type="text" name="nome" id="nome">
 </p>
-<p><input type="submit" value="Cadastrar"></p>
+<p><input class="button" type="submit" value="CADASTRAR"></p>
 </form>
 </div>
 </div>

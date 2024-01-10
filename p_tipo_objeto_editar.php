@@ -53,7 +53,7 @@ desconectar($conn);
 
 <input type="hidden" name="id" value="<?php echo $id; ?>" />
 <tr>
-<p><td colspan="2"><input type="submit" value="Cadastrar"></td></p>
+<p><td colspan="2"><input class="button" type="submit" value="EDITAR"></td></p>
 </tr>
 </form>
 </table>

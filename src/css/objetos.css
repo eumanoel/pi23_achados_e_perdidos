@@ -19,6 +19,7 @@ body{
     margin-right: auto;
     margin-bottom: 10px;
     text-align: center;
+    margin-top: 5px;
 }
 
 .objetos, .detalhes{
@@ -27,4 +28,17 @@ body{
     margin: 10px auto;
     text-align: center;
     ;
+}
+.button{
+    border-radius: 100px;
+    width: 100px;
+    padding: 5px;
+    margin: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-size: x-small;
+    background-color:var(--gray);
+    
+    
+    
 }
