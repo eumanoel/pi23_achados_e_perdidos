@@ -1,4 +1,4 @@
-
+<link rel="stylesheet" href="src/css/rodape_2.css">
 
         <footer>
         <div class="last">
